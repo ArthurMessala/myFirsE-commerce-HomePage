@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="img/logo-lojaTenis.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/logo-lojaTenis.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/logo-lojaTenis.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/logo-lojaTenis.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/logo-lojaTenis.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/logo-lojaTenis.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/logo-lojaTenis.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/logo-lojaTenis.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logo-lojaTenis.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/logo-lojaTenis.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/logo-lojaTenis.png">
+    <link rel="manifest" href="img/logo-lojaTenis.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+    <title>E-commerce</title>
+  </head>
+  <body>
+    <header class="container-fluid bg-light"> 
+      <div class="col-2">
+          <img src="img/logo-lojaTenis.png" id="logo">
+        </div>
+        <div class="container-fluid col-4 ">
+          <p id="boasvindas">Welcome Gues!</p>
+          <input type="search" name="" id="pesquisar" placeholder="Procure aqui seu produto"> 
+          <button id="btn-pesquisar">Pesquisar</button>
+
+          </div>
+          <div class="container-fluid col-6">
+            <ul class=" ml-0 links-menu">
+              <li id="link-login" class="linhavertical"><a href="#">Login</a></li>
+              <li class="linhavertical"><a href="#">Registre-se</a></li>
+              <li class="linhavertical"><a href="#">Minha Conta</a></li>
+              <li class="linhavertical"><a href="#">Rastrear Pedido</a></li>
+          </ul>
+
+          <div class="texto-topo">
+              <p class="mensagem-topo">Pagamento na Entrega | 30 dias Devolução
+                  <br>
+                  24/27 Atendimento ao Cliente 1800 00 11 22
+              </p>
+
+              <button id="carrinho" class="ml-0 container-fluid">Carrinho</button>
+              </div>
+          </div>
+        </div>
+        
+  </header>
+  <div id="carousel" class="container-fluid">
+
+    <div id="box-formulario"class="info-pesquisa container-fluid col-4 border border-dark mt-1">
+      <form id="formulario-banner">
+      <center>
+        <h2>Busca Rápida - Escolha um produto</h2>
+        <h4>Econtre o produto certo pelo preço certo!</h4>
+    </center>
+      <ol  id="ol-form" class="ol-busca">
+        <select class="container-fluid mb-3">
+          <option selected>Marca</option>
+          <option value="1">Nike</option>
+          <option value="2">Adidas</option>
+          <option value="3">Lacoste</option>
+        </select><br>
+        
+        <select class="container-fluid mb-3">
+          <option selected>Sexo</option>
+          <option value="1">Masculino</option>
+          <option value="2">Feminino</option>
+          <option value="3">Unisex</option>
+        </select><br>
+        <select class="container-fluid mb-3">
+          <option selected>Tamanho</option>
+          <option value="1">18,5 - 34</option>
+          <option value="2">34,5 - 39</option>
+          <option value="3">39,5 - 49</option>
+        </select><br>
+        <center class="container">
+        $
+        <select id="de">
+          <option selected>De</option>
+          <option value="1">150,00</option>
+          <option value="2">900,00</option>
+          <option value="3">1.500,00</option>
+        </select>
+        $
+        <select id="ate">
+          <option selected>Ate</option>
+          <option value="1">1.000,00</option>
+          <option value="2">3.000,00</option>
+          <option value="3">5.000,00</option>
+        </select>
+    
+      </center>
+      <center>
+        <button id="search-busca-rapida"> <i class="bi bi-search"></i> Buscar </button>
+      </center>
+      </ol><br>
+    </form>
+    </div>
+
+    <div id="carousel1"class="carousel col-8slide mt-1" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-flex w-100 container" src="img/banner tênis.png" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-flex w-100 container" src="img/bannerAirMax.png" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-flex w-100 container" src="img/yeezy700banner.png" alt="Third slide">
+        </div>
+      </div>
+
+    </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="script.js"></script>
+</div>
+
+<div id="seção-prodaval" class="container-fluid">
+
+<div id="secao-produtos" class="container-fluid">
+  <div class="produto">
+    <div class="card">
+      <img class="imagem-produto" src="img/air max 90.png" alt="Produto 5">
+      <div class="card-body">
+        <h5 class="card-title">Passion fruit Orange Guava</h5>
+        <p class="card-text">Descrição do Produto 5</p>
+        <a href="#" class="btn btn-primary">Comprar</a>
+      </div>
+      
+    </div>
+  </div>
+  <div class="produto">
+    <div class="card">
+      <img class="imagem-produto" src="img/air max 95.png" alt="Produto 5">
+      <div class="card-body">
+        <h5 class="card-title">Peach Mango</h5>
+        <p class="card-text">Descrição do Produto 5</p>
+        <a href="#" class="btn btn-primary">Comprar</a>
+      </div>
+      
+    </div>
+    
+  </div>
+  <div class="produto">
+    <div class="card">
+      <img class="imagem-produto" src="img/airmax90.png" alt="Produto 5">
+      <div class="card-body">
+        <h5 class="card-title">Red Mojito</h5>
+        <p class="card-text">Descrição do Produto 5</p>
+        <a href="#" class="btn btn-primary">Comprar</a>
+
+      </div>
+      
+    </div>
+    
+  </div>
+  <div class="produto">
+    <div class="card">
+      <img class="imagem-produto" src="img/vapormax plus.png" alt="Produto 5">
+      <div class="card-body">
+        <h5 class="card-title">Blueberry Ice</h5>
+        <p class="card-text">Descrição do Produto 5</p>
+        <a href="#" class="btn btn-primary">Comprar</a>
+      </div>
+      
+    </div>
+    
+  </div>
+  <div class="produto">
+    <div class="card">
+      <img class="imagem-produto" src="img/vapor max 2021.png" alt="Produto 5">
+      <div class="card-body">
+        <h5 class="card-title">Blue Razz Ice</h5>
+        <p class="card-text">Descrição do Produto 5</p>
+        <a href="#" class="btn btn-primary">Comprar</a>
+      </div>
+      
+    </div>
+    
+  </div>
+  <div class="produto">
+    <div class="card">
+      <img class="imagem-produto" src="img/dunk low.png" alt="Produto 5">
+      <div class="card-body">
+        <h5 class="card-title">Cranberry grape</h5>
+        <p class="card-text">Descrição do Produto 5</p>
+        <a href="#" class="btn btn-primary">Comprar</a>
+      </div>
+      
+    </div>
+    
+  </div>
+  <div class="produto">
+    <div class="card">
+      <img class="imagem-produto" src="img/j4.png" alt="Produto 5">
+      <div class="card-body">
+        <h5 class="card-title">Cola</h5>
+        <p class="card-text">Descrição do Produto 5</p>
+        <a href="#" class="btn btn-primary">Comprar</a>
+      </div>
+      
+    </div>
+    
+  </div>
+  <div class="produto">
+    <div class="card">
+      <img class="imagem-produto" src="img/lacoste social.png"alt="Produto 5">
+      <div class="card-body">
+        <h5 class="card-title">Sakura Grape</h5>
+        <p class="card-text">Descrição do Produto 5</p>
+        <a href="#" class="btn btn-primary">Comprar</a>
+      </div>
+      
+    </div>
+    
+  </div>
+  <div class="produto">
+    <div class="card">
+      <img class="imagem-produto" src="img/lacoste storm 96.png" alt="Produto 5">
+      <div class="card-body">
+        <h5 class="card-title">Energy</h5>
+        <p class="card-text">Descrição do Produto 5</p>
+        <a href="#" class="btn btn-primary">Comprar</a>
+      </div>
+      
+    </div>
+    
+  </div>
+
+
+  
+</div>
+    <div id="avaliacoes"class="container col-3">
+
+      <form id="form-avaliacoes" class="a-box-group">
+
+        <div class="avaliacao">
+          <p style="font-size: 1.5em; margin-left: 10%;">Produtos mais vistos</p>
+          <div class="descricao-mais-vistos container-fluid">
+            <img class="" style="max-width: 100px;" src="img/air max 90.png" alt="Foto do produtos">
+            <a style="margin-top: 5%; font: 1em sans-serif;" class="container-fluid">Descrição do produto <br> 	&#9733;&#9733;&#9733;&#9733;&#10025; (6)</a>
+
+          </div>
+        </div><br>
+        <hr size="2" width="100%" color="black" style="justify-self: center;">
+        <div class="avaliacao">
+          <p style="font-size: 1.5em; margin-left: 10%;">Produtos mais vistos</p>
+          <div class="descricao-mais-vistos container-fluid">
+            <img class="" style="max-width: 100px;" src="img/j4.png" alt="Foto do produtos">
+            <a style="margin-top: 5%; font: 1em sans-serif;" class="container-fluid">Descrição do produto <br> 	&#9733;&#9733;&#9733;&#9733;&#10025; (8)</a>
+          </div>
+        </div><br>
+        <hr size="2" width="100%" color="black" style="justify-self: center;">
+        <div class="avaliacao">
+          <p style="font-size: 1.5em; margin-left: 10%;">Produtos mais vistos</p>
+          <div class="descricao-mais-vistos container-fluid">
+            <img class="" style="max-width: 100px;" src="img/dunk low.png" alt="Foto do produtos">
+            <a style="margin-top: 5%; font: 1em sans-serif;" class="container-fluid">Descrição do produto <br> 	&#9733;&#9733;&#9733;&#9733;&#10025; (9)</a>
+          </div>
+        </div><br>
+        <hr size="2" width="100%" color="black" style="justify-self: center;">
+        <div class="avaliacao">
+          <p style="font-size: 1.5em; margin-left: 10%;">Produtos mais vistos</p>
+          <div class="descricao-mais-vistos container-fluid">
+            <img class="" style="max-width: 100px;" src="img/yeezy 700.png" alt="Foto do produtos">
+            <a style="margin-top: 5%; font: 1em sans-serif;" class="container-fluid">Descrição do produto <br> 	&#9733;&#9733;&#9733;&#9733;&#10025; (6)</a>
+          </div>
+        </div><br>
+        <hr size="2" width="100%" color="black" style="justify-self: center;">
+        <div class="avaliacao">
+          <p style="font-size: 1.5em; margin-left: 10%;">Produtos mais vistos</p>
+          <div class="descricao-mais-vistos container-fluid">
+            <img class="" style="max-width: 100px;" src="img/lacoste storm 96.png" alt="Foto do produtos">
+            <a style="margin-top: 5%; font: 1em sans-serif;" class="container-fluid">Descrição do produto <br> 	&#9733;&#9733;&#9733;&#9733;&#10025; (6)</a>
+          </div>
+        </div><br>
+        <center>
+          <button style="background-color: black; color: white; border-radius: 10px; margin-bottom: 20px;" id="search-busca-rapida"> <i class="bi bi-search"></i> Ver mais </button>
+        </center>
+
+
+      </form>
+      <div class="newsletter">
+        <p style="font-size: 1.5em; margin-left: 10%;">Newsletter</p>
+        <p style="font-size: 1.3em; margin-left: 10%;">Receba as novidades!</p>
+        <div class="descricao-mais-vistos container-fluid">
+        <input class="container-fluid" style="margin-left: 10%;"ype="text" placeholder="&#9993;E-mail">
+        <button id="cadastrar-newsletter">Cadastrar</button>
+      </div>
+      </div><br>
+    </div>
+  </div>
+</div>
+<hr size="2" width="100%" color="grey">
+<footer class="container">
+<div id="metodos-pagamento-footer"  class="col-3">
+  <h5 class="titulos-footer">Métodos de pagamento</h5>
+  <img src="img/métodos de pagamento - Editado.png" alt="">
+
+</div>
+<div class="col-3">
+  <h5  class="titulos-footer">Links Rapidos</h5>
+  <div class="links-rapidos">
+    
+    <a href="">Ajuda</a><br>
+    <a href="">Politica de Envio</a><br>
+    <a href="">Politica de trocas e deboluções</a><br>
+    <a href="">FAQ</a><br>
+    <a href="">Politica de Privacidade</a><br>
+    <a href="">Aviso Legal</a><br>
+
+  </div>
+</div>
+<div class="col-3">
+  <h5  class="titulos-footer">Redes sociais</h5>
+  <a href="#" target="_blank"><img class="icones-sociais" src="img/instagram_logo_icon_172387.png" alt=""></a>
+  <a href="#" target="_blank"><img class="icones-sociais" src="img/png-transparent-facebook-computer-icons-logo-black-and-white-rectangle-logo-brand.png" alt=""></a>
+  <a href="#" target="_blank"><img class="icones-sociais" src="img/twitter.png" alt=""></a>
+
+</div>
+<div class="col-3">
+  <h5 class="titulos-footer">Fale conosco</h5>
+  <p>Rua thcurubangos <br> N° 4</p>
+  <p> &#9993; flavorcloudshopp@gmail.com</p>
+  <p> &#9742; 55+(31) 992787879</p>
+</div>
+
+
+
+</footer>
+</body>
+</html>
